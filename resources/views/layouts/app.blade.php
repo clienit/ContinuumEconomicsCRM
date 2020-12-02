@@ -79,7 +79,8 @@
             @guest
                 @yield('content')
             @else
-                <app></app>
+                <header-bar></header-bar>
+                <router-view></router-view>
             @endguest
         </main>
     </div>

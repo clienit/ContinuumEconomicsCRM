@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\TransactionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,7 @@ Auth::routes(['register' => false]);
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('clients', ClientController::class);
+    Route::resource('transactions', TransactionController::class);
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
