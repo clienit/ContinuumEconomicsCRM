@@ -76,7 +76,11 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            @guest
+                @yield('content')
+            @else
+                <app></app>
+            @endguest
         </main>
     </div>
 </body>
