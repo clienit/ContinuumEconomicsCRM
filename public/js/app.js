@@ -2129,6 +2129,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -60012,40 +60014,42 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
-    [
-      _c("div", { staticClass: "collapse navbar-collapse" }, [
-        _c(
-          "div",
-          { staticClass: "navbar-nav" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "nav-item nav-link",
-                attrs: { to: "/client-page" }
-              },
-              [_vm._v("CLIENTS")]
-            ),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              {
-                staticClass: "nav-item nav-link",
-                attrs: { to: "/transaction-page" }
-              },
-              [_vm._v("TRANSACTIONS")]
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c("br")
-    ]
-  )
+  return _c("div", { staticClass: "container" }, [
+    _c(
+      "nav",
+      { staticClass: "navbar navbar-expand-sm navbar-light bg-light" },
+      [
+        _c("div", { staticClass: "collapse navbar-collapse" }, [
+          _c(
+            "div",
+            { staticClass: "navbar-nav" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass: "nav-item nav-link",
+                  attrs: { to: "/client-page" }
+                },
+                [_vm._v("CLIENTS")]
+              ),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                {
+                  staticClass: "nav-item nav-link",
+                  attrs: { to: "/transaction-page" }
+                },
+                [_vm._v("TRANSACTIONS")]
+              )
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c("br")
+      ]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
